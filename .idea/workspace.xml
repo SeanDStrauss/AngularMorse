@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="982e190d-0a61-4fe9-99e7-0255ed1dc8d2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/main.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
     </list>
     <ignored path="MorseCodeMain.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -753,12 +751,12 @@
       <created>1452475962021</created>
       <option name="number" value="Default" />
       <updated>1452475962021</updated>
-      <workItem from="1452475963175" duration="6592000" />
+      <workItem from="1452475963175" duration="6707000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6592000" />
+    <option name="totallyTimeSpent" value="6707000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
