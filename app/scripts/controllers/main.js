@@ -8,7 +8,7 @@
  * Controller of the morseCodeApp
  */
 angular.module('morseCodeApp')
-  .controller('MainCtrl', function () {
+  .controller('MainCtrl', function (yodaFactory) {
     var vm = this;
 
      vm.morse = {
@@ -22,6 +22,12 @@ angular.module('morseCodeApp')
         '8':'---..', '9':'----.', '0': '-----', '.':'.-.-.-',
         ',':'--..--', '?':'..--..', '/':'-..-.'
       };
+
+    var yodaSpeak = yodaFactory.getYoda();
+    vm.yodaTranslate = function(text) {
+      console.log(yodaSpeak.get({'sentence': text}));
+      return yodaSpeak.get('sentence', text);
+    };
 
 
 

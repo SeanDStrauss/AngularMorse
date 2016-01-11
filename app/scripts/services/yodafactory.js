@@ -8,16 +8,25 @@
  * Factory in the morseCodeApp.
  */
 angular.module('morseCodeApp')
-  .factory('yodaFactory', function () {
+  .factory('yodaFactory', function ($resource) {
     // Service logic
     // ...
 
-    var meaningOfLife = 42;
+    var yodaApi = $resource('https://yoda.p.mashape.com/yoda', {}, {
+      get: {
+        method: 'GET',
+        headers: {
+          'X-Mashape-Key' : 'zEs3Gj1vuFmshm446Z3SmHLJBBadp11x51Kjsnj0lZfKUUlDkx'
+        }
+      }
+    });
+    console.log(yodaApi);
+
 
     // Public API here
     return {
-      someMethod: function () {
-        return meaningOfLife;
+      getYoda: function () {
+        return yodaApi;
       }
     };
   });
