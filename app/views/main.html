@@ -1,0 +1,19 @@
+<div class="jumbotron">
+  <h1>Morse Code Translator</h1>
+  <p class="lead">
+    <img class="logo" src="images/blog_icon3.png" alt="I'm Yeoman"><br>
+    Get translated
+  </p>
+
+  <div>
+
+    <form name="translateField">
+      <input name="translateBox" ng-model="textToBeTranslated" type="search">
+    </form>
+    <div class="translated-text" ng-bind="vm.morseEncoder(textToBeTranslated)" ng-if="translateField.$dirty">
+
+    </div>
+
+  </div>
+
+</div>
